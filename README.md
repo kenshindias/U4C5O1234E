@@ -27,7 +27,7 @@ O objetivo desta atividade é criar um **semáforo funcional** utilizando **temp
 ### 🚦 Componentes Utilizados
 - Raspberry Pi Pico W
 - 3 LEDs (Vermelho, Amarelo e Verde)
-- 3 Resistores de 330Ω
+- 3 Resistores 
 
 ### 🔧 Configuração dos GPIOs
 - **Vermelho:** GPIO **11**
@@ -42,11 +42,11 @@ O objetivo desta atividade é criar um **semáforo funcional** utilizando **temp
 ### ▶️ Execução
 1. Clone o repositório:  
    ```sh
-   git clone https://github.com/kenshindias/temporizadores_pico.git
+   git clone https://github.com/kenshindias/U4C5O1234E.git
    ```
 2. Acesse a pasta:  
    ```sh
-   cd temporizadores_pico/U4C5O1234E_1
+   cd U4C5O1234E/U4C5O1234E_1
    ```
 3. Compile e rode o código usando o **Pico SDK**.
 
@@ -80,7 +80,7 @@ Esta atividade implementa um **temporizador de um disparo (one-shot)** para cont
 ### ▶️ Execução
 1. Acesse a pasta:  
    ```sh
-   cd temporizadores_pico/U4C5O1234E_2
+   cd U4C5O1234E/U4C5O1234E_2
    ```
 2. Compile e rode o código usando o **Pico SDK**.
 
