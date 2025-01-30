@@ -5,21 +5,28 @@ Este repositório contém a implementação de dois exercícios práticos utiliz
 ## Estrutura do Repositório
 
 ```
-📂 U4C5O1234E_1  # Atividade 1: Temporizador Periódico (Semáforo)
- ├── main.c      # Código-fonte do semáforo
- ├── README.md   # Descrição da atividade
-
-📂 U4C5O1234E_2  # Atividade 2: Temporizador de Um Disparo (Botão e LEDs)
- ├── main.c      # Código-fonte do temporizador de um disparo
- ├── README.md   # Descrição da atividade
-
-📜 README.md     # Informações gerais do repositório
+📂 U4C5O1234E
+ ├── 📂 U4C5O1234E_1          # Atividade 1: Temporizador Periódico (Semáforo)
+ │    ├── CMakeLists.txt       # Arquivo de configuração para compilação
+ │    ├── U4C5O1234E_1.c       # Código-fonte do semáforo
+ │    ├── diagram.json         # Diagrama do circuito
+ │    ├── pico_sdk_import.cmake # Configuração do Pico SDK
+ │    ├── wokwi.toml           # Arquivo de configuração para o Wokwi
+ │    └── README.md            # Documentação da atividade
+ ├── 📂 U4C5O1234E_2          # Atividade 2: Temporizador de Um Disparo (Botão e LEDs)
+ │    ├── CMakeLists.txt       # Arquivo de configuração para compilação
+ │    ├── U4C5O1234E_2.c       # Código-fonte do temporizador de um disparo
+ │    ├── diagram.json         # Diagrama do circuito
+ │    ├── pico_sdk_import.cmake # Configuração do Pico SDK
+ │    ├── wokwi.toml           # Arquivo de configuração para o Wokwi
+ │    └── README.md            # Documentação da atividade
+ └── README.md                # Documentação geral do repositório
 ```
 
 ---
 
 ## 🟢 Atividade 1: Temporizador Periódico (Semáforo)
-**Local:** `U4C5O1234E_1`
+**Local:** `U4C5O1234E/U4C5O1234E_1`
 
 ### 📌 Descrição
 O objetivo desta atividade é criar um **semáforo funcional** utilizando **temporizadores periódicos**. O semáforo alterna entre **vermelho, amarelo e verde** a cada **3 segundos**.
@@ -27,7 +34,7 @@ O objetivo desta atividade é criar um **semáforo funcional** utilizando **temp
 ### 🚦 Componentes Utilizados
 - Raspberry Pi Pico W
 - 3 LEDs (Vermelho, Amarelo e Verde)
-- 3 Resistores 
+- 3 Resistores
 
 ### 🔧 Configuração dos GPIOs
 - **Vermelho:** GPIO **11**
@@ -39,21 +46,10 @@ O objetivo desta atividade é criar um **semáforo funcional** utilizando **temp
 - A cada **3 segundos**, troca de cor
 - A cada **1 segundo**, exibe uma mensagem pela porta serial
 
-### ▶️ Execução
-1. Clone o repositório:  
-   ```sh
-   git clone https://github.com/kenshindias/U4C5O1234E.git
-   ```
-2. Acesse a pasta:  
-   ```sh
-   cd U4C5O1234E/U4C5O1234E_1
-   ```
-3. Compile e rode o código usando o **Pico SDK**.
-
 ---
 
 ## 🔴 Atividade 2: Temporizador de Um Disparo (Botão e LEDs)
-**Local:** `U4C5O1234E_2`
+**Local:** `U4C5O1234E/U4C5O1234E_2`
 
 ### 📌 Descrição
 Esta atividade implementa um **temporizador de um disparo (one-shot)** para controlar **LEDs via botão**.
@@ -62,7 +58,7 @@ Esta atividade implementa um **temporizador de um disparo (one-shot)** para cont
 - Raspberry Pi Pico W
 - 3 LEDs (Azul, Vermelho e Verde)
 - 1 Botão (Pushbutton)
-- 3 Resistores de 330Ω
+- 3 Resistores
 
 ### 🔧 Configuração dos GPIOs
 - **Azul:** GPIO **11**
@@ -76,13 +72,6 @@ Esta atividade implementa um **temporizador de um disparo (one-shot)** para cont
 - **Após mais 3 segundos:** Apaga o LED Vermelho
 - **Após mais 3 segundos:** Apaga o LED Verde
 - O botão **só pode ser pressionado novamente após todos os LEDs desligarem**
-
-### ▶️ Execução
-1. Acesse a pasta:  
-   ```sh
-   cd U4C5O1234E/U4C5O1234E_2
-   ```
-2. Compile e rode o código usando o **Pico SDK**.
 
 ---
 
